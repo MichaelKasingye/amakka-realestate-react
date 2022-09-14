@@ -1,47 +1,47 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Carousel from 'react-bootstrap/Carousel';
 
-// import Image from 'next/image';
 function Hero() {
+  const heroData = [
+    {
+      title:"Convince",
+      details:"Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis",
+      image:"https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      alt:"first interior image"
+    },
+    {
+      title:"Comfort",
+      details:"Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis",
+      image:"https://images.pexels.com/photos/6032425/pexels-photo-6032425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      alt:"second interior image"
+    },
+    {
+      title:"Peace of Mind",
+      details:"Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis",
+      image:"https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=857&q=80",
+      alt:"third interior image"
+    },
+  ]
   return (
-    <section id="hero" className="d-flex align-items-center">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1>
-              All professional services for your business in Uganda right here!
-            </h1>
-            <h2>
-              {" "}
-              On-demand services. Less stress, more time and better business.
-            </h2>
-            <div className="d-flex">
-              <Link
-                to="/legal-documents-page"
-                className="btn btn-danger rounded-3 p-3 fw-bold fs-5"
-                // data-bs-toggle="modal"
-                // data-bs-target="#healthCheck"
-              >
-                Legal Documents
-              </Link>
-              <Link to="/company-registration-page" 
-              // target="_blank" rel="noopener"
-                className="btn btn-danger rounded-3 mx-1  fs-5 d-flex align-items-center"
-              >
-                <span><strong>Company Registration</strong></span>
-              </Link>
-            </div>
-          </div>
-          <div className="col-lg-6 order-1 order-lg-2 hero-img">
-            <img
-              src="assets/img/hero-img.png"
-              className="img-fluid animated"
-              alt=" people together assembling a lego"
-            />
-          </div>
+    <Carousel fade>
+      {heroData.map((info, index) =>(
+        <Carousel.Item key={index} className="hero">
+          <div className='hero-image'>
+        <img
+          className="d-block w-100 "
+          src={info.image}
+          alt="First slide" 
+        />
         </div>
-      </div>
-    </section>
+        <h4 className='hero-heading' >{info.title}</h4>
+        <Carousel.Caption>
+          <div className='hero-caption'>
+          <h3>{info.title}</h3>
+          {/* <p >{info.details}</p> */}
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      ))}
+    </Carousel>
   );
 }
 

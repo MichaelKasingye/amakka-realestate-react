@@ -1,199 +1,333 @@
-export const productData = [
+export const apartment = [
   {
     id: 1,
-    image:
-      "https://images.pexels.com/photos/327882/pexels-photo-327882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Co-founders Agreement visual",
-    section:"Business Documents",
-    title: "Co-founders Agreement",
-    description:"A co-founder Agreement allows you to set out the equity ownership, initial investments and responsibilities of each Co-founder.",
-      features:[
-        "Co-founder details",
-        "Work/project scope",
-        "Responsibilities of each founder",
-        "Intellectual property clause",
-        "Confidentiality clause",
-        "Non-compete clause",
-        "Dissolution, resignation and dissolution ",
-      ],
-    price: 100000,
-  },
-  {
-    id: 2,
-    image:
-      "https://images.pexels.com/photos/327882/pexels-photo-327882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Shareholders Agreement",
-    section:"Business Documents",
-    title: "Shareholders agreement ",
-    description:"A shareholders Agreement will help you govern the relationship between your company shareholders. Although you and your partners are on good terms now, sometimes running a company will strain on the relationship, therefore it’s better to prepare from the onset and protect your interests and the company.",
-      features:[
-        "Shareholder details",
-        "Powers and responsibilities of a shareholder",
-        "Restrictions on transfer and assignment to third parties",
-        "How many shares  to be held",
-        "Dispute resolution",
-        "Exit strategy",
-      ],
-    price: 100000,
-  },
-  {
-    id: 3,
-    image:
-      "https://images.pexels.com/photos/327882/pexels-photo-327882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Business Plan",
-    section:"Business Documents",
-    title: "Business Plan",
-    description:"A document setting out a business's future objectives and strategies for achieving them.",
-      features:[
-        "Your business overview",
-        "Product or service",
-        "Problem and solution",
-        "Business management",
-        "Market analysis and strategy",
-        "Revenue analysis",
-      ],
-    price: 50000,
-  },
-  {
-    id: 4,
-    image:
-      "https://images.pexels.com/photos/327882/pexels-photo-327882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Non-Disclosure Agreement (NDA)",
-    section:"Business Documents",
-    title: "Non-Disclosure Agreement (NDA)",
-    description:"A Non-disclosure agreement is a legal document that forbids a recipient of information from disclosing that information to any person or entity. Before sharing any information that is so important to your company it is crucial that you sign it.",
-      features:[
-        "Description of the confidential information",
-        "Rights and obligations",
-        "Protection of the information",
-        "Circumstances where disclosure is permitted",
-        "Effects of breach",
-      ],
-    price: 50000,
-  },
-  {
-    id: 5,
-    image:
-      "https://images.pexels.com/photos/327882/pexels-photo-327882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Service Contract",
-    section:"Business Documents",
-    title: "Service Contract",
-    description:"A contract used between a service provider and a client (or customer) that outlines the exchange of services for compensation.",
-      features:[
-        "Performance  of the services",
-        "Consideration/payment ",
-        "Location ",
-        "Clients obligations",
-        "Service provider obligations",
-        "Warranties and indemnities",
-        "Termination",
-        "Dispute resolution",
-      ],
-    price: 50000,
-  },
-  {
-    id: 6,
-    image:
-      "https://images.pexels.com/photos/327882/pexels-photo-327882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Board resolution",
-    section:"Business Documents",
-    title: "Board resolution",
-    description:"A Resolution is a formal means by which decisions are made by a meeting of company, Resolutions a drafted to legally express the company decision and can be registered with URSB.",
-      features:[
-        "Details of the agreed on points",
-        "Registration",
-        "Signatories",
-      ],
-    price: 50000,
-  },
-  {
-    id: 7,
-    image:
-      "https://images.pexels.com/photos/327882/pexels-photo-327882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Joint venture Agreements",
-    section:"Business Documents",
-    title: "Joint venture Agreements",
-    description:"A joint venture is a contract between two or more parties who want to do business together for a period of time. Instead of forming a company, or partnership if your intention is to join with another party and have an equal stake in the venture. You can choose to enter a Joint venture Agreement.",
-      features:[
-        "Business objectives",
-        "Responsibilities of each party",
-        "Distribution of cost",
-        "Profit sharing",
-        "Liability ",
-        "Termination",
-        "Dispute resolution",
-      ],
-    price: 100000,
+    name: "Kampala Pearl",
+    developers: "Buildnet",
+    mapUrl:
+      "https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=kololo air strip&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+      location: "Kampala",
+      address: "Kampala Hill 7th Mukasa street",
+    price: 100000000,
+    beds: 3,
+    Bathrooms: 2,
+    sqrFeet: 1700,
+    payments: {
+      booking: 5000000,
+      downPayment: 30000000,
+    },
+    images: [
+      {
+        original:
+          "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1595535217393-1516ca35e74a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxMd1hneU1oNVNzUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1595535217393-1516ca35e74a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxMd1hneU1oNVNzUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+    ],
+    overView:
+      "This beautiful home is located just minutes to Kololo Airstrip move in ready. It is surounded with schools, hospitals, police.  The open  floor plan , kitchen is equipped with stainless steel appliances and granite counter tops, backsplash and white cabinets. The  master suite with dual vanities and a lovely closet. One additional bedrooms  complete space. The other features includes, community pool",
+
+    neighborhood: {
+      schools: ["Kololo High school", "kololo Primary School"],
+      hospitals: ["Kololo Hospital", "ST.Mark Hospital"],
+    },
   },
 
   {
-    id: 8,
-    image:
-      "https://images.pexels.com/photos/327882/pexels-photo-327882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Employment agreement",
-    section:"Employment Documents",
-    title: "Employment agreement",
-    description:"Employment Agreement is an essential document when hiring employees for your business. They are not only necessary for your legal protection; they can help set the tone and feel of your business. It also helps formalize the relationship between employee an employer which enhances professional and positive work.",
-      features:[
-        "Scope of work",
-        "Employee obligations",
-        "Remuneration",
-        "Benefits",
-        "Confidentiality clause",
-        "Share scheme ",
-        "Termination ",
-        "Dispute resolution",
-      ],
-    price: 150000,
+    id: 2,
+    name: "Kiira Pearl",
+    developers: "Buildnet",
+    mapUrl:
+      "https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=kololo air strip&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+      location: "Kiira",
+      address: "Kiira Hill 7th Mukasa street",
+    price: 200000000,
+    beds: 4,
+    Bathrooms: 2,
+    sqrFeet: 1700,
+    payments: {
+      booking: 5000000,
+      downPayment: 30000000,
+    },
+    images: [
+      {
+        original:
+          "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1595535217393-1516ca35e74a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxMd1hneU1oNVNzUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1595535217393-1516ca35e74a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxMd1hneU1oNVNzUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+    ],
+    overView:
+      "This beautiful home is located just minutes to Kololo Airstrip move in ready. It is surounded with schools, hospitals, police.  The open  floor plan , kitchen is equipped with stainless steel appliances and granite counter tops, backsplash and white cabinets. The  master suite with dual vanities and a lovely closet. One additional bedrooms  complete space. The other features includes, community pool",
+
+    neighborhood: {
+      schools: ["Kololo High school", "kololo Primary School"],
+      hospitals: ["Kololo Hospital", "ST.Mark Hospital"],
+    },
   },
   {
-    id: 9,
-    image:
-      "https://images.pexels.com/photos/327882/pexels-photo-327882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Casual worker agreements (part time)",
-    section:"Employment Documents",
-    title: "Casual worker agreements (part time) ",
-    description:"This Casual Worker's Contract is for use where there is no mutuality of obligation and no continuing employment relationship between assignments.",
-      features:[
-        "Work description", 
-        "Working ours",
-        "Payments and benefits",
-        "Termination",
-      ],
-    price: 100000,
+    id: 3,
+    name: "Gayaza Pearl",
+    developers: "Buildnet",
+    mapUrl:
+      "https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=kololo air strip&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+    location: "Gayaza",
+    address: "Gayaza Hill 7th Mukasa street",
+    price: 300000000,
+    beds: 4,
+    Bathrooms: 2,
+    sqrFeet: 1700,
+    payments: {
+      booking: 5000000,
+      downPayment: 30000000,
+    },
+    images: [
+      {
+        original:
+          "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1595535217393-1516ca35e74a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxMd1hneU1oNVNzUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1595535217393-1516ca35e74a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxMd1hneU1oNVNzUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+    ],
+    overView:
+      "This beautiful home is located just minutes to Kololo Airstrip move in ready. It is surounded with schools, hospitals, police.  The open  floor plan , kitchen is equipped with stainless steel appliances and granite counter tops, backsplash and white cabinets. The  master suite with dual vanities and a lovely closet. One additional bedrooms  complete space. The other features includes, community pool",
+
+    neighborhood: {
+      schools: ["Kololo High school", "kololo Primary School"],
+      hospitals: ["Kololo Hospital", "ST.Mark Hospital"],
+    },
   },
   {
-    id: 10,
-    image:
-      "https://images.pexels.com/photos/327882/pexels-photo-327882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Contractor agreement ",
-    section:"Employment Documents",
-    title: "Contractor agreement ",
-    description:"An independent Contractor Agreement is a written contract that spells out the terms of the working arrangement between a contractor and client; it includes a description of services, terms of service and payment details among others.",
-      features:[
-        "Service performance",
-        "Consideration",
-        "Payment & expenses",
-        "Confidentiality",
-        "Intellectual property",
-        "Termination",
-      ],
-    price: 100000,
+    id: 4,
+    name: "Buziga Pearl",
+    developers: "Buildnet",
+    mapUrl:
+      "https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=kololo air strip&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+    location: "Buziga",
+    address: "Buziga Hill 7th Mukasa street",
+    price: 400000000,
+    beds: 3,
+    Bathrooms: 2,
+    sqrFeet: 1700,
+    payments: {
+      booking: 5000000,
+      downPayment: 30000000,
+    },
+    images: [
+      {
+        original:
+          "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1595535217393-1516ca35e74a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxMd1hneU1oNVNzUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1595535217393-1516ca35e74a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxMd1hneU1oNVNzUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+    ],
+    overView:
+      "This beautiful home is located just minutes to Kololo Airstrip move in ready. It is surounded with schools, hospitals, police.  The open  floor plan , kitchen is equipped with stainless steel appliances and granite counter tops, backsplash and white cabinets. The  master suite with dual vanities and a lovely closet. One additional bedrooms  complete space. The other features includes, community pool",
+
+    neighborhood: {
+      schools: ["Kololo High school", "kololo Primary School"],
+      hospitals: ["Kololo Hospital", "ST.Mark Hospital"],
+    },
   },
   {
-    id: 11,
-    image:
-      "https://images.pexels.com/photos/327882/pexels-photo-327882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Termination deed/letter",
-    section:"Employment Documents",
-    title: "Termination deed/letter",
-    description:"A termination letter is one to be used when terminating an employee, this is to be signed by the employee finalizing all outstanding issues between the employer and employee. This deed will allow you with future issues smoothly, such as contractual claims or claims arising out of the termination of employment.",
-      features:[
-        "Employment obligations clause",
-        "Restraint of trade clause",
-        "Restraint on future claims or disputes",
-        "Severance and other entitlements ",
-      ],
-    price: 100000,
+    id: 6,
+    name: "Kampal Pearl",
+    developers: "Buildnet",
+    mapUrl:
+      "https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=kololo air strip&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+    location: "Kololo",
+    address: "Kololo Hill 7th Mukasa street",
+    price: 500000000,
+    beds: 3,
+    Bathrooms: 2,
+    sqrFeet: 1700,
+    payments: {
+      booking: 5000000,
+      downPayment: 30000000,
+    },
+    images: [
+      {
+        original:
+          "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1622866306950-81d17097d458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1595535217393-1516ca35e74a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxMd1hneU1oNVNzUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1595535217393-1516ca35e74a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxMd1hneU1oNVNzUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+      {
+        original:
+          "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnail:
+          "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        thumbnailTitle: "OTitle",
+        originalTitle: "Title",
+        originalAlt: "Pictures of a place",
+        description: "Picture of a place",
+      },
+    ],
+    overView:
+      "This beautiful home is located just minutes to Kololo Airstrip move in ready. It is surounded with schools, hospitals, police.  The open  floor plan , kitchen is equipped with stainless steel appliances and granite counter tops, backsplash and white cabinets. The  master suite with dual vanities and a lovely closet. One additional bedrooms  complete space. The other features includes, community pool",
+
+    neighborhood: {
+      schools: ["Kololo High school", "kololo Primary School"],
+      hospitals: ["Kololo Hospital", "ST.Mark Hospital"],
+    },
   },
 ];

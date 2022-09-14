@@ -1,7 +1,7 @@
 import React from "react";
 import ShortBodyTitle from "../BodyTitle/ShortBodyTitle";
 import { useParams } from "react-router-dom";
-import { productData } from "../../utilities/data";
+import { productData } from "../../utilities/data1";
 
 export default function Index() {
   // const [data, setData] = useState('')

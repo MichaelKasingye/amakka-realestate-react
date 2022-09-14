@@ -1,7 +1,7 @@
 import React from "react";
 import {PageTitle} from "../Components/BodyTitle";
 import Cards from "../Components/Card";
-import { productData } from "../utilities/data";
+import { productData } from "../utilities/data1";
 import TitleHeader from "../Components/TitleHeader/Index";
 
 // console.log(productData);
