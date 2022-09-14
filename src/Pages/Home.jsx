@@ -9,7 +9,7 @@ function Home() {
  
   return (
     <>
-       <TitleHeader title="Solfix Africa-Home"/>
+       <TitleHeader title="Amakka-Home"/>
     {/* <Hero/>
     <AboutUs/>
     <Services/>
