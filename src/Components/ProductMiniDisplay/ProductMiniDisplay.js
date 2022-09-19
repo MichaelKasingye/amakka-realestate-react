@@ -22,7 +22,9 @@ function ProductMiniDisplay({ data, title, loading }) {
       className="row mb-2 mt-3 d-flex justify-content-center product-container"
       data-aos="fade-up"
       >
-      {locationData.map((info) => (
+        {locationData !== null ?(
+          <> 
+          {locationData.map((info) => (
         <Product
           key={info.id}
           address={info.address}
@@ -35,6 +37,11 @@ function ProductMiniDisplay({ data, title, loading }) {
           imageUrl={info.img_url[0]}
         />
       ))}
+          </>
+        ):
+        "Loading..."
+        }
+     
     </div>
     </>
   );
