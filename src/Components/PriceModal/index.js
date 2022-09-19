@@ -23,7 +23,7 @@ export default function Index({ price, data }) {
 
   return (
     <>
-      <p className=" m-2 fw-bold" onClick={() => setShow(true)}>
+      <p className=" m-2 fs-6 fw-bold" onClick={() => setShow(true)}>
         Ugx: {priceOne}m - {priceTwo}m
         {/* {typeof v === "string" && `below ${v.split("-")[0]}`} */}
       </p>

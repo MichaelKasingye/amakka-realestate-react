@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
 
-import "bootstrap/dist/js/bootstrap.bundle.min";
 import Nav from "./Components/NavBar";
 import Footer from "./Components/Footer/Footer";
 // import Modals from "./Components/Modals";
@@ -33,9 +32,15 @@ import "./App.css";
 
 import { transitions, positions, Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
+import { useDispatch } from "react-redux";
+import { fetchApartmentsAsync } from "./redux/features/Apartments/ApartmentsSlice";
 
 function App() {
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(fetchApartmentsAsync());
+  }, [dispatch]);
   const options = {
     // you can also just use 'bottom center'
     position: positions.BOTTOM_CENTER,
@@ -76,8 +81,7 @@ function App() {
       </Routes>
       {/* <Modals/> */}
       <Cookie/>
-      <Cookie/>
-      {/* <Footer/> */}
+      <Footer/>
       </AlertProvider>
     </BrowserRouter>
   );

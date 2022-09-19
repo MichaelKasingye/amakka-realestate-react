@@ -1,20 +1,30 @@
 import React from "react";
-// import Hero from "../Components/Hero"
-// import AboutUs from "../Components/AboutUs";
-// import Services from "../Components/Services";
-// import Partners from "../Components/Partners/Partners";
-// import CallToAction from "../Components/CallToAction";
+import Hero from "../Components/Hero"
+import Search from "../Components/search";
+import Heading from "../Components/Heading/Heading";
+import ProductMiniDisplay from "../Components/ProductMiniDisplay/ProductMiniDisplay";
+import Why from "../Components/Why/Why";
 import TitleHeader from "../Components/TitleHeader/Index"
+import { useSelector } from "react-redux";
+import { ApartmentsSelector } from "../redux/features/Apartments/ApartmentsSlice";
 function Home() {
- 
+
+const { Apartments,
+   loading,
+  //  hasErrors 
+  } = useSelector(ApartmentsSelector);
+// console.log(Apartments);
+
   return (
     <>
        <TitleHeader title="Amakka-Home"/>
-    {/* <Hero/>
-    <AboutUs/>
-    <Services/>
-    <CallToAction/>
-    <Partners/> */}
+     <Hero/>
+    <Search/>
+    <Heading title="Kampala" />
+    <ProductMiniDisplay title="Kampala" data={Apartments} loading={loading}/>
+    <Heading title="Buziga" />
+    <ProductMiniDisplay title="Buziga" data={Apartments} loading={loading}/>
+    <Why/> 
      
     </>
   );

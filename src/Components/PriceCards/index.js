@@ -1,6 +1,6 @@
 import React from "react";
 export default function index({ data }) {
-  console.log(data);
+  // console.log(data);
   return (
     <div className="row" >
       {data.map((info) => (

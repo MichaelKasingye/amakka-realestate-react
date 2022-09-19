@@ -1,9 +1,9 @@
 import React from "react";
 
-// import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Product(
-  // { id,title, address, price, beds, baths, size, imageUrl }
+  { id,title, address, price, beds, baths, size, imageUrl }
   ) {
   // const {bedrooms} = info
   // console.log(title);
@@ -12,8 +12,8 @@ function Product(
     <>
       {/* <Meta/> */}
       <div className="property-Card ">
-        {/* <Link to="/[unit_Id]" as={`/${id}`}>
-          <a style={{ textDecoration: "none" }} className="text-secondary ">
+        <Link to={`/${id}`}>
+          <div style={{ textDecoration: "none" }} className="text-secondary ">
             <div className="property-Card-container">
               <div className="property-image-container">
                 <img
@@ -64,8 +64,8 @@ function Product(
                 </ul>
               </div>
             </div>
-          </a>
-        </Link> */}
+          </div>
+        </Link>
       </div>
     </>
   );

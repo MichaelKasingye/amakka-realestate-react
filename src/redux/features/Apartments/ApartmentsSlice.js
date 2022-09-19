@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { getData } from "../../../services/fetchData";
 
 const initialState = {
   Apartments: "",
@@ -43,11 +44,12 @@ export const ApartmentsSelector = (state) => state?.Apartments;
 export default ApartmentsSlice.reducer;
 
 // Asynchronous thunk action
-export const fetchApartmentsAsync = (Apartments) => {
+export const fetchApartmentsAsync = () => {
   return async (dispatch) => {
     dispatch(fetchApartments());
     try {
-      dispatch(fetchApartmentsSuccess(Apartments));
+      getData("entries").then((Apartments) => dispatch(fetchApartmentsSuccess(Apartments)));
+      // dispatch(fetchApartmentsSuccess(Apartments));
     } catch (error) {
       dispatch(fetchApartmentsFailure(error));
     }

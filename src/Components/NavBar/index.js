@@ -18,7 +18,7 @@ import { useSelector } from "react-redux";
 
 function NavBar() {
   const { Apartments, loading, hasErrors } = useSelector(ApartmentsSelector);
-  console.log(Apartments);
+  // console.log(Apartments);
 
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
