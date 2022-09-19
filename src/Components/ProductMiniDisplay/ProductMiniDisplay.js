@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 function ProductMiniDisplay({ data, title, loading }) {
   // console.log(title);
   console.log(loading);
-  const locationData = data.filter((info) => info.location === title);
+  const locationData =data? data.filter((info) => info.location === title): null;
   // console.log(locationData);
 
   useEffect(() => {
