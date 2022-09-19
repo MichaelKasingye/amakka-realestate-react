@@ -26,11 +26,48 @@
     -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
 
+
+    <style>
+    .loader-wrapper {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: grid;
+      place-items: center;
+      z-index: -1;
+    }
+
+    .loader {
+      border: 16px solid #e3e3e3;
+      border-top: 16px solid #3498db;
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+</style>
+
     <title>Amakka -Homes</title>
   </head>
   <body>
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

@@ -10,6 +10,7 @@ body {
     max-width: 1400px;
     overflow-x: hidden;
     scroll-behavior: smooth;
+
   /* margin: auto auto;
   max-width: 1700px; */
   }
@@ -34,7 +35,10 @@ body {
   p{
     font-size: 18px;
   }
-  
+  main{
+    z-index: 10;
+    background-color: #FFFFFF;
+  }
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/

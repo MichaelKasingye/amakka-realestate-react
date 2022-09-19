@@ -16,7 +16,7 @@ const { Apartments,
 // console.log(Apartments);
 
   return (
-    <>
+    <main>
        <TitleHeader title="Amakka-Home"/>
      <Hero/>
     <Search/>
@@ -26,7 +26,7 @@ const { Apartments,
     <ProductMiniDisplay title="Buziga" data={Apartments} loading={loading}/>
     <Why/> 
      
-    </>
+    </main>
   );
 }
 
