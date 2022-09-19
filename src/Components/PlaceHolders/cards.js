@@ -18,7 +18,9 @@ export default function cards() {
     </p>
     <span
         tabIndex={-1}
-      className="btn btn-primary disabled placeholder col-6"
+        style={{backgroundColor:"#333333"}}
+
+      className="btn disabled placeholder col-6"
     />
   </div>
 </div>
@@ -39,7 +41,9 @@ export default function cards() {
     </p>
     <span
         tabIndex={-1}
-      className="btn btn-primary disabled placeholder col-6"
+        style={{backgroundColor:"#333333"}}
+
+      className="btn disabled placeholder col-6"
     />
   </div>
 </div>
@@ -58,7 +62,8 @@ export default function cards() {
     </p>
     <span
         tabIndex={-1}
-      className="btn btn-primary disabled placeholder col-6"
+        style={{backgroundColor:"#333333"}}
+      className="btn  disabled placeholder col-6"
     />
   </div>
 </div>
