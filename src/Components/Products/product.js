@@ -3,7 +3,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 function Product(
-  { id,title, address, price, beds, baths, size, imageUrl }
+  { id,title, address, price, beds, baths, size, imageUrl, alt }
   ) {
   // const {bedrooms} = info
   // console.log(title);
@@ -18,7 +18,7 @@ function Product(
               <div className="property-image-container">
                 <img
                   src={imageUrl}
-                  alt="apartment exterior"
+                  alt={`visual of ${alt}`}
                   className="img-fluid "
                 />
               </div>

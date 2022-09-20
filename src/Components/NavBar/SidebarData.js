@@ -1,4 +1,5 @@
-import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineHome, AiFillContacts } from "react-icons/ai";
+import { FcAbout } from "react-icons/fc";
 
 
 export const SidebarData = [
@@ -7,9 +8,14 @@ export const SidebarData = [
     path: "/",
    icon: <AiOutlineHome/>
   },
-//   {
-//     title: "Services",
-//     path: "/",
-//     icon: <i className="bi bi-person" />
-//   },
+  {
+    title: "About",
+    path: "/about",
+   icon: <FcAbout/>
+  },
+  {
+    title: "Contact",
+    path: "/contact",
+   icon: <AiFillContacts/>
+  },
 ];

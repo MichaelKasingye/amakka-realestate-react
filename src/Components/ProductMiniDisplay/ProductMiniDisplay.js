@@ -35,6 +35,7 @@ function ProductMiniDisplay({ data, title, loading }) {
           baths={info.bathrooms}
           size={info.size}
           imageUrl={info.img_url[0]}
+          alt={info.title}
         />
       ))}
           </>

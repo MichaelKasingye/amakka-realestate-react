@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Aos from 'aos'
 import "aos/dist/aos.css"
-function csr() {
+function CSR() {
 
     useEffect(() => {
         Aos.init({duration: 500})
@@ -24,7 +24,7 @@ function csr() {
             <div className=" mx-3 ">
               <div href="#" className="service text-center">
                 <span className="" />
-                <i class="bi bi-person fs-1 text-danger"></i>
+                <i className="bi bi-person fs-1 text-danger"></i>
                 <h2 className="service-heading">Child Care</h2>
                 <p>
                  For every Unit purchased a child in need is aided in support.
@@ -36,7 +36,7 @@ function csr() {
             <div className="">
               <div href="#" className="service text-center">
                 <span className="" />
-                <i class="bi bi-tree-fill fs-1 text-danger"></i>
+                <i className="bi bi-tree-fill fs-1 text-danger"></i>
                 <h2 className="service-heading">Envirnmental support</h2>
                 <p>
                 A tree is planted for every unit purchased
@@ -49,4 +49,4 @@ function csr() {
     )
 }
 
-export default csr
+export default CSR

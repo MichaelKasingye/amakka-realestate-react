@@ -17,26 +17,29 @@ import { Dropdown } from "react-bootstrap";
 import PriceModal from "../PriceModal";
 import DistrictModal from "../DistrictModal";
 import { ApartmentsSelector } from "../../redux/features/Apartments/ApartmentsSlice";
-import { districts } from "../../utilities/districts";
+// import { districts } from "../../utilities/districts";
+import { nonRepeat } from "../../services/functions";
 function Search() {
   const navigate = useNavigate();
-
   const {
     Apartments,
     //  loading, hasErrors
   } = useSelector(ApartmentsSelector);
+
+  const apartmentLocations = nonRepeat(
+    Apartments.map((locations) => locations.location)
+  );
 
   const [name, setName] = useState("");
   const dispatch = useDispatch();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // dispatch(fetchSearchTermSuccess(name))
+    // The Regex eliminates space in the search word
     dispatch(
       fetchSearchTermAsync(name.toLowerCase().replace(/[\n\r\s\t]+/g, ""))
     );
     navigate("/results");
-    // alert(`The name you entered was: ${name}`);
   };
 
   useEffect(() => {
@@ -54,7 +57,6 @@ function Search() {
           >
             <div className="row  align-items-end">
               <div className="col-md-8">
-                {/* <label className="fs-4 text-light">Search</label> */}
                 <div
                   className="select-wrap d-flex mt-2 rounded-3"
                   style={{ backgroundColor: "white" }}
@@ -93,12 +95,13 @@ function Search() {
             <Dropdown>
               <Dropdown.Toggle
                 id="dropdown-button-dark-example1"
-                variant="secondary"className="mx-2 fw-bold "
+                variant="secondary"
+                className="mx-2 fw-bold "
               >
                 Price
               </Dropdown.Toggle>
 
-              <Dropdown.Menu variant="dark" >
+              <Dropdown.Menu variant="dark">
                 <PriceModal data={Apartments} price={[100000000, 200000000]} />
                 <PriceModal data={Apartments} price={[400000000, 500000000]} />
                 <PriceModal data={Apartments} price={[400000000, 500000000]} />
@@ -115,8 +118,8 @@ function Search() {
               </Dropdown.Toggle>
 
               <Dropdown.Menu variant="dark">
-                {districts.map((info, index) => (
-                  <NavDropdown.Item key={index} href="/#">
+                {apartmentLocations.map((info, index) => (
+                  <NavDropdown.Item key={index}>
                     <DistrictModal locations={info} data={Apartments} />
                   </NavDropdown.Item>
                 ))}

@@ -39,7 +39,7 @@ export default function Index({ price, data }) {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {unitsRange.length === "0" ? (
+          {unitsRange.length === 0 ? (
             <p className="fs-3">
               {" "}
               Unfortunately, there are no Apartments in this range

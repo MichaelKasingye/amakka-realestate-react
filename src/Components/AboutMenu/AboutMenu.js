@@ -1,37 +1,37 @@
 import React from 'react'
-import Link from 'next/link'
+import {Link} from "react-router-dom"
 
 function AboutMenu() {
     return (
         <ul className=" m-0 p-1   w-100 fw-normal bg-light p-4 mt-2 d-flex justify-content-end flex-wrap" style={{listStyle: "none", color:"#2980B9" }}>
     <li className="mx-1 px-1 " >
-    <Link href="/about/#us">
-      <a>Us</a>
+    <Link to="/about/#us">
+      <span>Us</span>
     </Link>
     </li>
     <li className="mx-1 px-1 " >
-    <Link href="/about/#partners">
-      <a>Partners</a>
+    <Link to="/about/#partners">
+      <span>Partners</span>
     </Link>
     </li>
     <li className="mx-1 px-1 " >
-    <Link href="/about">
-      <a>Values</a>
+    <Link to="/about">
+      <span>Values</span>
     </Link>
     </li>
     <li className="mx-1 px-1 " >
-    <Link href="/about">
-      <a>CSR</a>
+    <Link to="/about">
+      <span>CSR</span>
     </Link>
     </li>
     <li className="mx-1 px-1 " >
-    <Link href="/about">
-      <a>Team</a>
+    <Link to="/about">
+      <span>Team</span>
     </Link>
     </li>
     <li className="mx-1 px-1 " >
-    <Link href="/about">
-      <a>FAQ</a>
+    <Link to="/about">
+      <span>FAQ</span>
     </Link>
     </li>
     </ul>

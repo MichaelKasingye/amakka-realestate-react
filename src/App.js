@@ -17,7 +17,7 @@ import SubmitFeedBack from "./Pages/SubmitFeedBack";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import Pricing from "./Pages/Price";
+import Results from "./Pages/Results";
 import Error from "./Pages/Error";
 
 import BusinessDevelopment from "./Pages/Service/BusinessDevelopment";
@@ -65,9 +65,9 @@ function App() {
         {/* <Route path="/legal-documents-page" element={<LegalDocumentsPage />} /> */}
 
         <Route path="/apartment-description/:id" element={<FeaturesProductDecriptionPage />} />
-        {/* <Route path="/about" element={<About />} /> */}
-        {/* <Route path="/Contact" element={<Contact />} /> */}
-        {/* <Route path="/Pricing" element={<Pricing />} /> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/results" element={<Results />} />
         {/* <Route path="/submit-feedback" element={<SubmitFeedBack />} /> */}
 
         {/* <Route path="/business-development" element={<BusinessDevelopment />} /> */}

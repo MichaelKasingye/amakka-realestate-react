@@ -15,6 +15,7 @@ import {
   fetchApartmentsAsync,
 } from "../../redux/features/Apartments/ApartmentsSlice";
 import { useSelector } from "react-redux";
+import { SidebarData } from "./SidebarData";
 
 function NavBar() {
   const { Apartments, loading, hasErrors } = useSelector(ApartmentsSelector);
@@ -38,21 +39,13 @@ function NavBar() {
     <SliderMenu />
     <nav id="navbar" className="navbar display-nav">
       <ul>
-        <li>
-          <Link className="nav-link scrollto active" to="/">
-            Home
+        {SidebarData.map((menu, idx) =>(
+           <li key={idx}>
+          <Link className="nav-link scrollto active" to={menu.path}>
+            {menu.title}
           </Link>
         </li>
-        <li>
-          <Link className="nav-link scrollto" to="/">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link className="nav-link scrollto" to="/">
-            Contact
-          </Link>
-        </li>
+        ))}
       </ul>
       <i className="bi bi-list mobile-nav-toggle" />
     </nav>

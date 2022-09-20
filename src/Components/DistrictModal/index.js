@@ -56,10 +56,10 @@ export default function Index({ locations, data }) {
               />
             ))}
           </div>
-          {unitsLocationRange.length === "0" && (
+          {unitsLocationRange.length === 0 && (
             <p className="fs-3">
               {" "}
-              Unfortunately, we do not  are no Apartments in this Area
+              Unfortunately, we do not have any apartments in {locations}.
             </p>
           )}
         </Modal.Body>
