@@ -64,7 +64,7 @@ function App() {
         {/* <Route path="/company-registration-page" element={<CompanyRegistrationPage />} /> */}
         {/* <Route path="/legal-documents-page" element={<LegalDocumentsPage />} /> */}
 
-        {/* <Route path="/features-description-page/:id" element={<FeaturesProductDecriptionPage />} /> */}
+        <Route path="/apartment-description/:id" element={<FeaturesProductDecriptionPage />} />
         {/* <Route path="/about" element={<About />} /> */}
         {/* <Route path="/Contact" element={<Contact />} /> */}
         {/* <Route path="/Pricing" element={<Pricing />} /> */}

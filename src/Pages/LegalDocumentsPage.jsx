@@ -2,7 +2,7 @@ import React from "react";
 import {PageTitle} from "../Components/BodyTitle";
 import Cards from "../Components/Card";
 import { productData } from "../utilities/data1";
-import TitleHeader from "../Components/TitleHeader/Index";
+import TitleHeader from "../Components/TitleHeader";
 
 // console.log(productData);
 export default function LegalDocumentsPage() {

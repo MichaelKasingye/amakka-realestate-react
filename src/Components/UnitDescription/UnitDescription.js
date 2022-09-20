@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ImageGallery from "react-image-gallery";
-import ContactAgentForm from "../../components/Forms/ContactAgentForm";
-import ContactMortgageForm from "../../components/Forms/ContactMortgageForm";
+import ContactAgentForm from "../../Components/Forms/ContactAgentForm";
+import ContactMortgageForm from "../../Components/Forms/ContactMortgageForm";
 
 export function PriceDescription({ unit }) {
   useEffect(() => {
@@ -127,6 +127,7 @@ export function MapDescription({ unit }) {
               </h3> */}
       <div className="iframe-section">
         <iframe
+        title={unit.title}
           data-aos="fade-right"
           style={{ border: 0, width: "100%", height: 270 }}
           src={unit.map}

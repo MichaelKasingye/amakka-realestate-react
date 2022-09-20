@@ -1,5 +1,5 @@
 import React from "react";
-import TitleHeader from "../Components/TitleHeader/Index";
+import TitleHeader from "../Components/TitleHeader";
 
 function About() {
   return (

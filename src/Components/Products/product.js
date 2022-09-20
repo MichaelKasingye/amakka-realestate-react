@@ -12,7 +12,7 @@ function Product(
     <>
       {/* <Meta/> */}
       <div className="property-Card ">
-        <Link to={`/${id}`}>
+        <Link to={`/apartment-description/${id}`}>
           <div style={{ textDecoration: "none" }} className="text-secondary ">
             <div className="property-Card-container">
               <div className="property-image-container">

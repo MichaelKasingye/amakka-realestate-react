@@ -5,7 +5,7 @@ import {
   ServiceBodyOrdinary,
   ServiceBodyReverse,
 } from "../../Components/Services/ServiceBody";
-import TitleHeader from "../../Components/TitleHeader/Index";
+import TitleHeader from "../../Components/TitleHeader";
 
 export default function intellectualProperty() {
   const HeroList = [

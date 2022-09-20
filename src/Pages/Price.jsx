@@ -2,7 +2,7 @@ import React from 'react'
 import BodyTitle from '../Components/BodyTitle';
 import PriceCards from '../Components/PriceCards'
 import { pricingData } from '../utilities/pricing';
-import TitleHeader from "../Components/TitleHeader/Index"
+import TitleHeader from "../Components/TitleHeader"
 
 // import { useLocation } from "react-router-dom";
 

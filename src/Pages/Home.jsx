@@ -4,7 +4,7 @@ import Search from "../Components/search";
 import Heading from "../Components/Heading/Heading";
 import ProductMiniDisplay from "../Components/ProductMiniDisplay/ProductMiniDisplay";
 import Why from "../Components/Why/Why";
-import TitleHeader from "../Components/TitleHeader/Index"
+import TitleHeader from "../Components/TitleHeader"
 import { useSelector } from "react-redux";
 import { ApartmentsSelector } from "../redux/features/Apartments/ApartmentsSlice";
 function Home() {

@@ -3,7 +3,7 @@ import BodyTitle, {PageTitle} from "../Components/BodyTitle";
 // import Cards from "../Components/Card";
 // import { productData } from "../utilities/data";
 import CollapseComponents from "../Components/CollapseComponents"
-import TitleHeader from "../Components/TitleHeader/Index";
+import TitleHeader from "../Components/TitleHeader";
 
 function FeaturesPage() {
   // const registerCoDocuments = productData.filter(info => info.section ==="CompanyRegistration");
