@@ -13,7 +13,7 @@ function about() {
  
   return (
     <main>
-           <TitleHeader title="Amakka-Homes-Search Results" />
+           <TitleHeader title="Amakka-Homes-about" />
 
       <BreadCrumbs page="about "/>
       {/* <AboutMenu/> */}

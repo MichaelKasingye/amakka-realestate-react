@@ -4,9 +4,9 @@ import * as Yup from "yup";
 import { postData } from "../../services/fetchData";
 import Swal from "sweetalert2";
 
-export default function ContactAgentForm({ unit, title }) {
+export default function ContactMortgageForm({ unit, title }) {
   function sendData(data) {
-    postData("interested_clients", { data, unit });
+    postData("interested_mortgage_clients", { data, unit });
     Swal.fire({
       position: "top-end",
       icon: "success",
@@ -21,22 +21,25 @@ export default function ContactAgentForm({ unit, title }) {
       name: "",
       phoneNumber: "",
       email: "",
-      message: `I am interested in ${unit.title} ${unit.address} of ${unit.bedrooms} bedrooms`,
+      message: `I am interested in ${unit.title} ${unit.address} in ${unit.location} of Ugx:${unit.price
+        ?.toString()
+        .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")} `,
     },
     validationSchema: Yup.object({
-      name: Yup.string().max(17, "Must be 17 or less").required("Required"),
+      name: Yup.string()
+        .max(17, "Must be 17 characters or less")
+        .required("Required"),
       phoneNumber: Yup.number(),
       email: Yup.string().email("invalid email address").required("Required"),
-      message: Yup.string().max(100, "Must be 50 or less").required("Required"),
+      message: Yup.string()
+        .max(100, "Must be 50 characters or less")
+        .required("Required"),
     }),
     onSubmit: (values) => {
-      // console.log(values);
       sendData(values);
     },
   });
-  // console.log(formik.values);
-  console.log(formik.errors);
-  // col-md-6 col-sm-12 col-lg-4
+  // console.log(formik.errors);
   return (
     <form className=" contact-form" onSubmit={formik.handleSubmit}>
       <h3 className="title-d" style={{ color: "#3D8AB9" }}>

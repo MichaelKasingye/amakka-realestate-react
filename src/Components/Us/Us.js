@@ -12,8 +12,8 @@ function Us() {
         <div id ="us" className="site-section" data-aos="fade-left">
   <div className="container">
     <div className="row">
-      <div className="col-md-6 border" data-aos="fade-left" style={{maxHeight:"400px", overflow:"hidden"}}>
-        <img src="assets/img/us.png" alt="visual about the company" className="img-fluid w-100" />
+      <div className="col-md-6 " data-aos="fade-left" style={{maxHeight:"400px", overflow:"hidden"}}>
+        <img src="assets/img/projectImages/searchHouse.svg" alt="visual about the company" className="img-fluid w-100" />
       </div>
       <div className="col-md-5 ml-auto" data-aos="fade-up" >
         <div className="site-section-title">

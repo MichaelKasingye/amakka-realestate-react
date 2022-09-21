@@ -185,7 +185,7 @@ export function AgentForms({ unit }) {
 export function MortgageForms({ unit }) {
   return (
     <div className="client-contact-forms">
-      <ContactMortgageForm unit={unit} title="Contact Mortgagor and buy" />
+      <ContactMortgageForm unit={unit} title="Inquire for a mortgage" />
     </div>
   );
 }
