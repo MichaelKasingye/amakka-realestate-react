@@ -17,7 +17,7 @@ import { Dropdown } from "react-bootstrap";
 import PriceModal from "../PriceModal";
 import DistrictModal from "../DistrictModal";
 import { ApartmentsSelector } from "../../redux/features/Apartments/ApartmentsSlice";
-// import { districts } from "../../utilities/districts";
+import { districts } from "../../utilities/districts";
 import { nonRepeat } from "../../services/functions";
 function Search() {
   const navigate = useNavigate();
@@ -25,10 +25,17 @@ function Search() {
     Apartments,
     //  loading, hasErrors
   } = useSelector(ApartmentsSelector);
+// console.log(Apartments);
+  const apartmentLocations =  Apartments !== "object"?
+  [...Apartments].map((locations) => locations.location):districts;
 
-  const apartmentLocations = nonRepeat(
-    Apartments.map((locations) => locations.location)
-  );
+    // const apartmentLocations = [...Apartments].map((locations) => locations.location);
+
+  const apartmentNonRepeatLocations = nonRepeat(apartmentLocations)
+  // const apartmentNonRepeatLocations = nonRepeat(Apartments.map((locations) => locations.location))
+
+  console.log(apartmentLocations);
+  console.log( apartmentNonRepeatLocations);
 
   const [name, setName] = useState("");
   const dispatch = useDispatch();
@@ -118,7 +125,7 @@ function Search() {
               </Dropdown.Toggle>
 
               <Dropdown.Menu variant="dark">
-                {apartmentLocations.map((info, index) => (
+                {apartmentNonRepeatLocations.map((info, index) => (
                   <NavDropdown.Item key={index}>
                     <DistrictModal locations={info} data={Apartments} />
                   </NavDropdown.Item>

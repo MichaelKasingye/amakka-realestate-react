@@ -38,7 +38,7 @@ import { fetchApartmentsAsync } from "./redux/features/Apartments/ApartmentsSlic
 function App() {
   const dispatch = useDispatch();
 
-  useEffect(() => {
+  useEffect( () => {
     dispatch(fetchApartmentsAsync());
   }, [dispatch]);
   const options = {
